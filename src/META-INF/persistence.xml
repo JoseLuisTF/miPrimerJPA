@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="mi_pryecto_web_BD" transaction-type="RESOURCE_LOCAL">
+		<class>entities.Asesor</class>
+		<class>entities.Docente</class>
+		<class>entities.Estudianteproyecto</class>
+		<class>entities.Juradoanteproyecto</class>
+		<class>entities.Juradoproyecto</class>
+		<class>entities.Proyecto</class>
+		<class>entities.Tipoasesor</class>
+		<class>entities.Estudiante</class>
+		<class>entities.Carrera</class>
+		<properties>
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+			<property name="javax.persistence.jdbc.password" value="" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/proyecto"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+		</properties>
+	</persistence-unit>
+</persistence>
